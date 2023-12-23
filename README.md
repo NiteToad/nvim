@@ -13,5 +13,7 @@ Windows nvim data path
 ## Installed
 
 [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md) version .10
+
 [NerdFont](https://github.com/ryanoasis/nerd-fonts?tab=readme-ov-file#font-installation)
+
 [Ripgrep](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation)
