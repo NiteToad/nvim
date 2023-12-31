@@ -20,14 +20,14 @@ return {
             cpp = { "cppcheck" },
         }
         local lint_group = vim.api.nvim_create_augroup("lint", {})
-        vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" },{
+        vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
             group = lint_group,
             callback = function()
-            lint.try_lint()
+                lint.try_lint()
             end,
         })
 
-        vim.keymap.set("n", "<leader>tl", function ()
+        vim.keymap.set("n", "<leader>tl", function()
             lint.try_lint()
         end, { desc = "Trigger lint" })
     end,
